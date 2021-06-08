@@ -2,7 +2,7 @@ import numpy as np
 import argparse
 import os
 import sys
-from feeder.ntu_read_skeleton import read_xyz
+from ntu_read_skeleton import read_xyz
 from numpy.lib.format import open_memmap
 import pickle
 
