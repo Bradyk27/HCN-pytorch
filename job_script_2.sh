@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH -p gpu
+#SBATCH --gres gpu:1
+#SBATCH -N 1
+#SBATCH --job-name=train_HCN_2
+#SBATCH --output=train_HCN_log_2.txt
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=bradyakruse@gmail.com
+                                                                                                              
+enable_lmod
+module load container_env tensorflow-gpu/2.2.0
+
+crun.tensorflow-gpu python3 main.py --dataset_dir skeletons/ --mode train --model_name HCN --dataset_name NTU-RGB-D-CV --num 01
