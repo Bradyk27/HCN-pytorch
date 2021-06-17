@@ -1,62 +1,52 @@
-2021-06-17 02:11:03,597:WARNING: Setting up a new session...
-2021-06-17 02:11:03,623:INFO: Socket refused connection, running socketless
-2021-06-17 02:11:03,623:ERROR: [Errno 111] Connection refused
-2021-06-17 02:11:03,623:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cc756710>: on_close() takes 1 positional argument but 3 were given
-2021-06-17 02:11:03,723:WARNING: Setting up a new session...
-2021-06-17 02:11:03,732:INFO: Socket refused connection, running socketless
-2021-06-17 02:11:03,733:ERROR: [Errno 111] Connection refused
-2021-06-17 02:11:03,733:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbeea050>: on_close() takes 1 positional argument but 3 were given
-2021-06-17 02:11:03,832:WARNING: Setting up a new session...
-2021-06-17 02:11:03,842:INFO: Socket refused connection, running socketless
-2021-06-17 02:11:03,843:ERROR: [Errno 111] Connection refused
-2021-06-17 02:11:03,843:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cc9b9710>: on_close() takes 1 positional argument but 3 were given
-2021-06-17 02:11:03,942:WARNING: Setting up a new session...
-2021-06-17 02:11:03,951:INFO: Socket refused connection, running socketless
-2021-06-17 02:11:03,951:ERROR: [Errno 111] Connection refused
-2021-06-17 02:11:03,951:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbeeab90>: on_close() takes 1 positional argument but 3 were given
-2021-06-17 02:11:04,051:WARNING: Setting up a new session...
-2021-06-17 02:11:04,060:INFO: Socket refused connection, running socketless
-2021-06-17 02:11:04,060:ERROR: [Errno 111] Connection refused
-2021-06-17 02:11:04,060:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbef9560>: on_close() takes 1 positional argument but 3 were given
-2021-06-17 02:11:04,160:INFO: dataset_dir: skeleton_convert/
-2021-06-17 02:11:04,160:INFO: dataset_name: NTU-RGB-D-CV
-2021-06-17 02:11:04,160:INFO: model_dir: ./
-2021-06-17 02:11:04,160:INFO: model_name: HCN
-2021-06-17 02:11:04,160:INFO: load_model: None
-2021-06-17 02:11:04,160:INFO: load: False
-2021-06-17 02:11:04,160:INFO: mode: train
-2021-06-17 02:11:04,161:INFO: num: 01
-2021-06-17 02:11:04,161:INFO: model_version: HCN
-2021-06-17 02:11:04,161:INFO: experiment_path: ./experiments/NTU-RGB-D-CV/HCN01
-2021-06-17 02:11:04,161:INFO: restore_file: None
-2021-06-17 02:11:04,161:INFO: gpu_id: 0
-2021-06-17 02:11:04,161:INFO: cuda: True
-2021-06-17 02:11:04,161:INFO: data_parallel: False
-2021-06-17 02:11:04,161:INFO: seed: 0
-2021-06-17 02:11:04,161:INFO: lr: 0.001
-2021-06-17 02:11:04,161:INFO: lr_decay_type: exp
-2021-06-17 02:11:04,162:INFO: lr_step: [100, 160, 200]
-2021-06-17 02:11:04,162:INFO: scheduler_gamma: 0.1
-2021-06-17 02:11:04,162:INFO: scheduler_gamma2: 0.99
-2021-06-17 02:11:04,162:INFO: scheduler_gamma3: 0.5
-2021-06-17 02:11:04,162:INFO: patience: 20
-2021-06-17 02:11:04,162:INFO: batch_size: 64
-2021-06-17 02:11:04,162:INFO: num_epochs: 400
-2021-06-17 02:11:04,162:INFO: start_epoch: 0
-2021-06-17 02:11:04,162:INFO: save_best_ever_n_epoch: 50
-2021-06-17 02:11:04,162:INFO: save_summary_steps: 1
-2021-06-17 02:11:04,163:INFO: num_workers: 4
-2021-06-17 02:11:04,163:INFO: optimizer: Adam
-2021-06-17 02:11:04,163:INFO: weight_decay: 0.0001
-2021-06-17 02:11:04,163:INFO: clip: 0.5
-2021-06-17 02:11:04,163:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
-2021-06-17 02:11:04,163:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
-2021-06-17 02:11:04,163:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 25, 'num_person': 2, 'num_class': 60}
-2021-06-17 02:11:04,163:INFO: loss_args: {'type': 'CE'}
-2021-06-17 02:11:04,163:INFO: dataset_dir: skeleton_convert/
-2021-06-17 02:11:04,163:INFO: dataset_name: NTU-RGB-D-CV
-2021-06-17 02:11:04,164:INFO: mode: train
-2021-06-17 02:11:16,937:INFO: HCN(
+2021-06-17 02:38:06,639:WARNING: Setting up a new session...
+2021-06-17 02:38:06,649:INFO: Visdom successfully connected to server
+2021-06-17 02:38:06,748:WARNING: Setting up a new session...
+2021-06-17 02:38:06,761:INFO: Visdom successfully connected to server
+2021-06-17 02:38:06,859:WARNING: Setting up a new session...
+2021-06-17 02:38:06,872:INFO: Visdom successfully connected to server
+2021-06-17 02:38:06,970:WARNING: Setting up a new session...
+2021-06-17 02:38:06,983:INFO: Visdom successfully connected to server
+2021-06-17 02:38:07,080:WARNING: Setting up a new session...
+2021-06-17 02:38:07,093:INFO: Visdom successfully connected to server
+2021-06-17 02:38:07,190:INFO: dataset_dir: skeleton_convert/
+2021-06-17 02:38:07,191:INFO: dataset_name: NTU-RGB-D-CV
+2021-06-17 02:38:07,191:INFO: model_dir: ./
+2021-06-17 02:38:07,191:INFO: model_name: HCN
+2021-06-17 02:38:07,191:INFO: load_model: None
+2021-06-17 02:38:07,191:INFO: load: False
+2021-06-17 02:38:07,191:INFO: mode: train
+2021-06-17 02:38:07,191:INFO: num: 01
+2021-06-17 02:38:07,191:INFO: model_version: HCN
+2021-06-17 02:38:07,192:INFO: experiment_path: ./experiments/NTU-RGB-D-CV/HCN01
+2021-06-17 02:38:07,192:INFO: restore_file: None
+2021-06-17 02:38:07,192:INFO: gpu_id: 0
+2021-06-17 02:38:07,192:INFO: cuda: True
+2021-06-17 02:38:07,192:INFO: data_parallel: False
+2021-06-17 02:38:07,192:INFO: seed: 0
+2021-06-17 02:38:07,192:INFO: lr: 0.001
+2021-06-17 02:38:07,192:INFO: lr_decay_type: exp
+2021-06-17 02:38:07,192:INFO: lr_step: [100, 160, 200]
+2021-06-17 02:38:07,192:INFO: scheduler_gamma: 0.1
+2021-06-17 02:38:07,193:INFO: scheduler_gamma2: 0.99
+2021-06-17 02:38:07,193:INFO: scheduler_gamma3: 0.5
+2021-06-17 02:38:07,193:INFO: patience: 20
+2021-06-17 02:38:07,193:INFO: batch_size: 64
+2021-06-17 02:38:07,193:INFO: num_epochs: 400
+2021-06-17 02:38:07,193:INFO: start_epoch: 0
+2021-06-17 02:38:07,193:INFO: save_best_ever_n_epoch: 50
+2021-06-17 02:38:07,193:INFO: save_summary_steps: 1
+2021-06-17 02:38:07,193:INFO: num_workers: 4
+2021-06-17 02:38:07,193:INFO: optimizer: Adam
+2021-06-17 02:38:07,194:INFO: weight_decay: 0.0001
+2021-06-17 02:38:07,194:INFO: clip: 0.5
+2021-06-17 02:38:07,194:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-06-17 02:38:07,194:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-06-17 02:38:07,194:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 25, 'num_person': 2, 'num_class': 60}
+2021-06-17 02:38:07,194:INFO: loss_args: {'type': 'CE'}
+2021-06-17 02:38:07,194:INFO: dataset_dir: skeleton_convert/
+2021-06-17 02:38:07,194:INFO: dataset_name: NTU-RGB-D-CV
+2021-06-17 02:38:07,194:INFO: mode: train
+2021-06-17 02:38:12,851:INFO: HCN(
   (conv1): Sequential(
     (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
     (1): ReLU()
@@ -104,10 +94,40 @@
   )
   (fc8): Linear(in_features=512, out_features=60, bias=True)
 )
-2021-06-17 02:11:16,938:INFO: Loading the datasets...
-2021-06-17 02:12:48,886:INFO: - done.
-2021-06-17 02:12:48,886:INFO: Starting training for 400 epoch(s)
-2021-06-17 02:12:48,886:INFO: lr decay:exp
-2021-06-17 02:12:48,888:INFO: Epoch 1/400
-2021-06-17 02:13:05,806:INFO: - Train metrics: accuracytop1: 0.061 ; accuracytop5: 0.241 ; loss: 3.661 ; ls_all: 3.661 ; ls_CE: 3.661
-2021-06-17 02:13:10,252:INFO: - Eval metrics : accuracytop1: 0.213 ; accuracytop5: 0.544 ; loss: 2.929 ; ls_all: 2.929 ; ls_CE: 2.929
+2021-06-17 02:38:12,851:INFO: Loading the datasets...
+2021-06-17 02:38:22,606:INFO: - done.
+2021-06-17 02:38:22,607:INFO: Starting training for 400 epoch(s)
+2021-06-17 02:38:22,607:INFO: lr decay:exp
+2021-06-17 02:38:22,608:INFO: Epoch 1/400
+2021-06-17 02:38:39,098:INFO: - Train metrics: accuracytop1: 0.074 ; accuracytop5: 0.271 ; loss: 3.601 ; ls_all: 3.601 ; ls_CE: 3.601
+2021-06-17 02:38:43,909:INFO: - Eval metrics : accuracytop1: 0.225 ; accuracytop5: 0.581 ; loss: 2.820 ; ls_all: 2.820 ; ls_CE: 2.820
+2021-06-17 02:38:44,319:INFO: - Found new best accuracy
+2021-06-17 02:38:44,332:INFO: Epoch 2/400
+2021-06-17 02:39:00,063:INFO: - Train metrics: accuracytop1: 0.291 ; accuracytop5: 0.659 ; loss: 2.478 ; ls_all: 2.478 ; ls_CE: 2.478
+2021-06-17 02:39:04,863:INFO: - Eval metrics : accuracytop1: 0.514 ; accuracytop5: 0.860 ; loss: 1.668 ; ls_all: 1.668 ; ls_CE: 1.668
+2021-06-17 02:39:05,286:INFO: - Found new best accuracy
+2021-06-17 02:39:05,458:INFO: Epoch 3/400
+2021-06-17 02:39:20,967:INFO: - Train metrics: accuracytop1: 0.417 ; accuracytop5: 0.786 ; loss: 1.991 ; ls_all: 1.991 ; ls_CE: 1.991
+2021-06-17 02:39:25,775:INFO: - Eval metrics : accuracytop1: 0.610 ; accuracytop5: 0.911 ; loss: 1.317 ; ls_all: 1.317 ; ls_CE: 1.317
+2021-06-17 02:39:26,103:INFO: - Found new best accuracy
+2021-06-17 02:39:26,110:INFO: Epoch 4/400
+2021-06-17 02:39:41,842:INFO: - Train metrics: accuracytop1: 0.479 ; accuracytop5: 0.828 ; loss: 1.768 ; ls_all: 1.768 ; ls_CE: 1.768
+2021-06-17 02:39:46,705:INFO: - Eval metrics : accuracytop1: 0.642 ; accuracytop5: 0.927 ; loss: 1.170 ; ls_all: 1.170 ; ls_CE: 1.170
+2021-06-17 02:39:47,044:INFO: - Found new best accuracy
+2021-06-17 02:39:47,049:INFO: Epoch 5/400
+2021-06-17 02:40:02,788:INFO: - Train metrics: accuracytop1: 0.514 ; accuracytop5: 0.850 ; loss: 1.648 ; ls_all: 1.648 ; ls_CE: 1.648
+2021-06-17 02:40:07,614:INFO: - Eval metrics : accuracytop1: 0.670 ; accuracytop5: 0.938 ; loss: 1.063 ; ls_all: 1.063 ; ls_CE: 1.063
+2021-06-17 02:40:07,949:INFO: - Found new best accuracy
+2021-06-17 02:40:07,955:INFO: Epoch 6/400
+2021-06-17 02:40:23,565:INFO: - Train metrics: accuracytop1: 0.540 ; accuracytop5: 0.864 ; loss: 1.555 ; ls_all: 1.555 ; ls_CE: 1.555
+2021-06-17 02:40:28,428:INFO: - Eval metrics : accuracytop1: 0.680 ; accuracytop5: 0.942 ; loss: 1.004 ; ls_all: 1.004 ; ls_CE: 1.004
+2021-06-17 02:40:28,763:INFO: - Found new best accuracy
+2021-06-17 02:40:28,770:INFO: Epoch 7/400
+2021-06-17 02:40:44,512:INFO: - Train metrics: accuracytop1: 0.553 ; accuracytop5: 0.873 ; loss: 1.498 ; ls_all: 1.498 ; ls_CE: 1.498
+2021-06-17 02:40:49,332:INFO: - Eval metrics : accuracytop1: 0.695 ; accuracytop5: 0.944 ; loss: 0.959 ; ls_all: 0.959 ; ls_CE: 0.959
+2021-06-17 02:40:49,722:INFO: - Found new best accuracy
+2021-06-17 02:40:49,763:INFO: Epoch 8/400
+2021-06-17 02:41:05,290:INFO: - Train metrics: accuracytop1: 0.566 ; accuracytop5: 0.876 ; loss: 1.459 ; ls_all: 1.459 ; ls_CE: 1.459
+2021-06-17 02:41:10,118:INFO: - Eval metrics : accuracytop1: 0.712 ; accuracytop5: 0.951 ; loss: 0.905 ; ls_all: 0.905 ; ls_CE: 0.905
+2021-06-17 02:41:10,505:INFO: - Found new best accuracy
+2021-06-17 02:41:10,687:INFO: Epoch 9/400
