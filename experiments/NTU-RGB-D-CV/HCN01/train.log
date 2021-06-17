@@ -1,62 +1,62 @@
-2021-06-16 16:20:07,582:WARNING: Setting up a new session...
-2021-06-16 16:20:07,600:INFO: Socket refused connection, running socketless
-2021-06-16 16:20:07,600:ERROR: [Errno 111] Connection refused
-2021-06-16 16:20:07,600:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f423ea7b8c0>: on_close() takes 1 positional argument but 3 were given
-2021-06-16 16:20:07,700:WARNING: Setting up a new session...
-2021-06-16 16:20:07,706:INFO: Socket refused connection, running socketless
-2021-06-16 16:20:07,706:ERROR: [Errno 111] Connection refused
-2021-06-16 16:20:07,706:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f423e215200>: on_close() takes 1 positional argument but 3 were given
-2021-06-16 16:20:07,806:WARNING: Setting up a new session...
-2021-06-16 16:20:07,814:INFO: Socket refused connection, running socketless
-2021-06-16 16:20:07,815:ERROR: [Errno 111] Connection refused
-2021-06-16 16:20:07,815:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f423ecdf8c0>: on_close() takes 1 positional argument but 3 were given
-2021-06-16 16:20:07,914:WARNING: Setting up a new session...
-2021-06-16 16:20:07,923:INFO: Socket refused connection, running socketless
-2021-06-16 16:20:07,923:ERROR: [Errno 111] Connection refused
-2021-06-16 16:20:07,923:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f423e215d40>: on_close() takes 1 positional argument but 3 were given
-2021-06-16 16:20:08,023:WARNING: Setting up a new session...
-2021-06-16 16:20:08,031:INFO: Socket refused connection, running socketless
-2021-06-16 16:20:08,031:ERROR: [Errno 111] Connection refused
-2021-06-16 16:20:08,031:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f423e21e710>: on_close() takes 1 positional argument but 3 were given
-2021-06-16 16:20:08,131:INFO: dataset_dir: ./skeletons
-2021-06-16 16:20:08,131:INFO: dataset_name: NTU-RGB-D-CV
-2021-06-16 16:20:08,131:INFO: model_dir: ./
-2021-06-16 16:20:08,131:INFO: model_name: HCN
-2021-06-16 16:20:08,131:INFO: load_model: None
-2021-06-16 16:20:08,131:INFO: load: False
-2021-06-16 16:20:08,132:INFO: mode: train
-2021-06-16 16:20:08,132:INFO: num: 01
-2021-06-16 16:20:08,132:INFO: model_version: HCN
-2021-06-16 16:20:08,132:INFO: experiment_path: ./experiments/NTU-RGB-D-CV/HCN01
-2021-06-16 16:20:08,132:INFO: restore_file: None
-2021-06-16 16:20:08,132:INFO: gpu_id: 0
-2021-06-16 16:20:08,132:INFO: cuda: True
-2021-06-16 16:20:08,133:INFO: data_parallel: False
-2021-06-16 16:20:08,133:INFO: seed: 0
-2021-06-16 16:20:08,133:INFO: lr: 0.001
-2021-06-16 16:20:08,133:INFO: lr_decay_type: exp
-2021-06-16 16:20:08,133:INFO: lr_step: [100, 160, 200]
-2021-06-16 16:20:08,133:INFO: scheduler_gamma: 0.1
-2021-06-16 16:20:08,133:INFO: scheduler_gamma2: 0.99
-2021-06-16 16:20:08,133:INFO: scheduler_gamma3: 0.5
-2021-06-16 16:20:08,133:INFO: patience: 20
-2021-06-16 16:20:08,133:INFO: batch_size: 64
-2021-06-16 16:20:08,134:INFO: num_epochs: 400
-2021-06-16 16:20:08,134:INFO: start_epoch: 0
-2021-06-16 16:20:08,134:INFO: save_best_ever_n_epoch: 50
-2021-06-16 16:20:08,134:INFO: save_summary_steps: 1
-2021-06-16 16:20:08,134:INFO: num_workers: 4
-2021-06-16 16:20:08,134:INFO: optimizer: Adam
-2021-06-16 16:20:08,134:INFO: weight_decay: 0.0001
-2021-06-16 16:20:08,134:INFO: clip: 0.5
-2021-06-16 16:20:08,134:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
-2021-06-16 16:20:08,134:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
-2021-06-16 16:20:08,135:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 25, 'num_person': 2, 'num_class': 60}
-2021-06-16 16:20:08,135:INFO: loss_args: {'type': 'CE'}
-2021-06-16 16:20:08,135:INFO: dataset_dir: ./skeletons
-2021-06-16 16:20:08,135:INFO: dataset_name: NTU-RGB-D-CV
-2021-06-16 16:20:08,135:INFO: mode: train
-2021-06-16 16:20:20,787:INFO: HCN(
+2021-06-17 02:11:03,597:WARNING: Setting up a new session...
+2021-06-17 02:11:03,623:INFO: Socket refused connection, running socketless
+2021-06-17 02:11:03,623:ERROR: [Errno 111] Connection refused
+2021-06-17 02:11:03,623:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cc756710>: on_close() takes 1 positional argument but 3 were given
+2021-06-17 02:11:03,723:WARNING: Setting up a new session...
+2021-06-17 02:11:03,732:INFO: Socket refused connection, running socketless
+2021-06-17 02:11:03,733:ERROR: [Errno 111] Connection refused
+2021-06-17 02:11:03,733:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbeea050>: on_close() takes 1 positional argument but 3 were given
+2021-06-17 02:11:03,832:WARNING: Setting up a new session...
+2021-06-17 02:11:03,842:INFO: Socket refused connection, running socketless
+2021-06-17 02:11:03,843:ERROR: [Errno 111] Connection refused
+2021-06-17 02:11:03,843:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cc9b9710>: on_close() takes 1 positional argument but 3 were given
+2021-06-17 02:11:03,942:WARNING: Setting up a new session...
+2021-06-17 02:11:03,951:INFO: Socket refused connection, running socketless
+2021-06-17 02:11:03,951:ERROR: [Errno 111] Connection refused
+2021-06-17 02:11:03,951:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbeeab90>: on_close() takes 1 positional argument but 3 were given
+2021-06-17 02:11:04,051:WARNING: Setting up a new session...
+2021-06-17 02:11:04,060:INFO: Socket refused connection, running socketless
+2021-06-17 02:11:04,060:ERROR: [Errno 111] Connection refused
+2021-06-17 02:11:04,060:ERROR: error from callback <function Visdom.setup_socket.<locals>.on_close at 0x7f51cbef9560>: on_close() takes 1 positional argument but 3 were given
+2021-06-17 02:11:04,160:INFO: dataset_dir: skeleton_convert/
+2021-06-17 02:11:04,160:INFO: dataset_name: NTU-RGB-D-CV
+2021-06-17 02:11:04,160:INFO: model_dir: ./
+2021-06-17 02:11:04,160:INFO: model_name: HCN
+2021-06-17 02:11:04,160:INFO: load_model: None
+2021-06-17 02:11:04,160:INFO: load: False
+2021-06-17 02:11:04,160:INFO: mode: train
+2021-06-17 02:11:04,161:INFO: num: 01
+2021-06-17 02:11:04,161:INFO: model_version: HCN
+2021-06-17 02:11:04,161:INFO: experiment_path: ./experiments/NTU-RGB-D-CV/HCN01
+2021-06-17 02:11:04,161:INFO: restore_file: None
+2021-06-17 02:11:04,161:INFO: gpu_id: 0
+2021-06-17 02:11:04,161:INFO: cuda: True
+2021-06-17 02:11:04,161:INFO: data_parallel: False
+2021-06-17 02:11:04,161:INFO: seed: 0
+2021-06-17 02:11:04,161:INFO: lr: 0.001
+2021-06-17 02:11:04,161:INFO: lr_decay_type: exp
+2021-06-17 02:11:04,162:INFO: lr_step: [100, 160, 200]
+2021-06-17 02:11:04,162:INFO: scheduler_gamma: 0.1
+2021-06-17 02:11:04,162:INFO: scheduler_gamma2: 0.99
+2021-06-17 02:11:04,162:INFO: scheduler_gamma3: 0.5
+2021-06-17 02:11:04,162:INFO: patience: 20
+2021-06-17 02:11:04,162:INFO: batch_size: 64
+2021-06-17 02:11:04,162:INFO: num_epochs: 400
+2021-06-17 02:11:04,162:INFO: start_epoch: 0
+2021-06-17 02:11:04,162:INFO: save_best_ever_n_epoch: 50
+2021-06-17 02:11:04,162:INFO: save_summary_steps: 1
+2021-06-17 02:11:04,163:INFO: num_workers: 4
+2021-06-17 02:11:04,163:INFO: optimizer: Adam
+2021-06-17 02:11:04,163:INFO: weight_decay: 0.0001
+2021-06-17 02:11:04,163:INFO: clip: 0.5
+2021-06-17 02:11:04,163:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-06-17 02:11:04,163:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-06-17 02:11:04,163:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 25, 'num_person': 2, 'num_class': 60}
+2021-06-17 02:11:04,163:INFO: loss_args: {'type': 'CE'}
+2021-06-17 02:11:04,163:INFO: dataset_dir: skeleton_convert/
+2021-06-17 02:11:04,163:INFO: dataset_name: NTU-RGB-D-CV
+2021-06-17 02:11:04,164:INFO: mode: train
+2021-06-17 02:11:16,937:INFO: HCN(
   (conv1): Sequential(
     (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
     (1): ReLU()
@@ -104,4 +104,10 @@
   )
   (fc8): Linear(in_features=512, out_features=60, bias=True)
 )
-2021-06-16 16:20:20,788:INFO: Loading the datasets...
+2021-06-17 02:11:16,938:INFO: Loading the datasets...
+2021-06-17 02:12:48,886:INFO: - done.
+2021-06-17 02:12:48,886:INFO: Starting training for 400 epoch(s)
+2021-06-17 02:12:48,886:INFO: lr decay:exp
+2021-06-17 02:12:48,888:INFO: Epoch 1/400
+2021-06-17 02:13:05,806:INFO: - Train metrics: accuracytop1: 0.061 ; accuracytop5: 0.241 ; loss: 3.661 ; ls_all: 3.661 ; ls_CE: 3.661
+2021-06-17 02:13:10,252:INFO: - Eval metrics : accuracytop1: 0.213 ; accuracytop5: 0.544 ; loss: 2.929 ; ls_all: 2.929 ; ls_CE: 2.929

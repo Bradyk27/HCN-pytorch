@@ -1,0 +1,22 @@
+1) Connect to Wahab via
+ssh [user]@wahab.hpc.odu.edu
+
+2) Navigate to directory
+cd HCN-PyTorch
+
+3) Load Tensorflow container environment
+module load container_env tensorflow-gpu/2.2.0
+
+4) Install any additional libraries needed.
+crun.tensorflow-gpu pip install [module_name]
+
+5) Start the Visdom server
+salloc crun.tensorflow-gpu python -m visdom.server
+
+6) Connect to Visdom server by running the following in a LOCAL ssh
+ssh -f -N -t -L "[local_port > 8000]:wahab.hpc.odu.edu:[visdom_port, typically 8097]" "[user]@wahab.hpc.odu.edu"
+
+7) Test connection by opening a Google Chrome browser and navigating to
+https://localhost:[local_port]
+
+8) From here, use Slurm to run PyTorch commands, specifiying to use a GPU-enabled partition.

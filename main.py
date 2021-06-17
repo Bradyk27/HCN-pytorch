@@ -118,7 +118,6 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params,logger):
 
                 summ.append(summary_batch)
 
-            # update the average loss # main for progress bar, not logger
             loss_running = loss.data.item()
             loss_avg.update(loss_running )
 
@@ -126,11 +125,16 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params,logger):
             t.update()
 
     # compute mean of all metrics in summary
-    metrics_mean = {metric:np.mean([x[metric] for x in summ]) for metric in summ[0]}
+
+    
+    #if summ type == tensor, tensor.cpu().item()?
+            
+    metrics_mean = {metric:np.mean([x[metric] if type(x[metric])==float else x[metric][0].cpu().item() for x in summ]) for metric in summ[0]}
     metrics_string = " ; ".join("{}: {:05.3f}".format(k, v) for k, v in metrics_mean.items())
     logger.info("- Train metrics: " + metrics_string)
 
     return metrics_mean,confusion_meter
+
 
 def evaluate(model, loss_fn, dataloader, metrics, params,logger):
     """Evaluate the model on `num_steps` batches.
@@ -191,7 +195,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params,logger):
         summ.append(summary_batch)
 
     # compute mean of all metrics in summary
-    metrics_mean = {metric: np.mean([x[metric] for x in summ]) for metric in summ[0]}
+    metrics_mean = {metric:np.mean([x[metric] if type(x[metric])==float else x[metric][0].cpu().item() for x in summ]) for metric in summ[0]}
     metrics_string = " ; ".join("{}: {:05.3f}".format(k, v) for k, v in metrics_mean.items())
     logger.info("- Eval metrics : " + metrics_string)
 

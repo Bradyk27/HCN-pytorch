@@ -212,7 +212,7 @@ def accuracytop5(output, target, topk=(5,)):
 
     res = []
     for k in topk:
-        correct_k = correct[:k].view(-1).float().sum(0, keepdim=True)
+        correct_k = correct[:k].reshape(-1).float().sum(0, keepdim=True)
         res.append(correct_k.mul_(1.0 / batch_size))
     return res
 

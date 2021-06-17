@@ -7,8 +7,11 @@
 #SBATCH --output=train_HCN_log_2.txt
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bradyakruse@gmail.com
-                                                                                                              
+
 enable_lmod
 module load container_env tensorflow-gpu/2.2.0
 
-crun.tensorflow-gpu python3 main.py --dataset_dir skeletons/ --mode train --model_name HCN --dataset_name NTU-RGB-D-CV --num 01
+srun crun.tensorflow-gpu python -m visdom.server &
+srun crun.tensorflow-gpu python3 main.py --dataset_dir skeleton_convert/ --mode train --model_name HCN --dataset_name NTU-RGB-D-CV --num 01
+
+## Need to figure out how to access visdom here!! When I can access it remotely, the HCN-PyTorch cannot. When I can't access it remotely, the HCN-PyTorch can. Something weird with GPU partition connections?

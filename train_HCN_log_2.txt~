@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "main.py", line 27, in <module>
-    from utils import  utils
-  File "/home/hpc-0235/HCN-pytorch/utils/utils.py", line 13, in <module>
-    import openpyxl
-ModuleNotFoundError: No module named 'openpyxl'
-/var/spool/slurmd/job207693/slurm_script: line 11: crun.tensorflow-gpu: command not found
