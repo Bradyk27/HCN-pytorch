@@ -6,8 +6,9 @@ from ntu_read_skeleton import read_xyz
 from numpy.lib.format import open_memmap
 import pickle
 
-training_subjects = [01,02,03,04,05,06,07,08,09,10]
-training_videos = [01,02]
+#01, 02, 03? Do we need to specify training subjects as well?
+training_subjects = [1,2,3,4,5,6,7,8,9,10]
+training_videos = [1,2]
 max_body = 1
 num_joint = 25
 max_frame = 300
@@ -48,7 +49,7 @@ def gendata(data_path,
     for filename in os.listdir(data_path):
         if filename in ignored_samples:
             continue
-        subject_id = in
+        subject_id = int(
             filename[filename.find('subject') + 7:filename.find('subject') + 9])
         video_id = int(
             filename[filename.find('video') + 5:filename.find('video') + 7])
