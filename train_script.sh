@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -p timed-gpu
+#SBATCH -p gpu
 #SBATCH --gres gpu:1
 #SBATCH -N 1
 #SBATCH --job-name=train_HCN

@@ -7,7 +7,7 @@ from numpy.lib.format import open_memmap
 import pickle
 
 #01, 02, 03? Do we need to specify training subjects as well?
-training_subjects = [1,2,3,5,7,8,10]
+training_subjects = [1,2,3,4,5,6,7,8,9,10]
 training_videos = [1,2]
 max_body = 1
 num_joint = 13

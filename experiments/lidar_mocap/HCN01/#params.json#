@@ -1,0 +1,363 @@
+Last login: Wed Jun 23 10:09:27 2021 from 98.186.206.156
+wahab-01:~> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210699 timed-gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~> squeue -p timed-gpu
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210699 timed-gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~> squeue -p timed-gpu
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210699 timed-gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~> 
+wahab-01:~> squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            209643       gpu  gpu_csr dduff002 PD       0:00      1 (Nodes required for job are DOWN, DRAINED or reserved for jobs in higher priority partitions)
+            210644       gpu interact jlats001 PD       0:00      1 (Priority)
+            210401       gpu dna_1.0_ sdodl001 PD       0:00      1 (Priority)
+            210400       gpu dna_1.0_ sdodl001 PD       0:00      1 (Priority)
+            210399       gpu dna_1.0_ sdodl001 PD       0:00      1 (Priority)
+            210646       gpu sys/dash htaha001  R    1:01:40      1 d2-w4140a-02
+            208631       gpu interact atemt001  R 4-23:26:54      1 d3-w4140b-04
+            209573       gpu  net_c64 pjian001  R 2-10:16:49      1 d3-w4140b-01
+            209562       gpu  net_c32 pjian001  R 2-10:54:13      1 d2-w4140a-05
+            209576       gpu  net_128 pjian001  R 2-02:27:00      1 d3-w4140b-07
+            210376       gpu train_mo msadi002  R    2:51:08      1 d2-w4140a-04
+            210093       gpu train_mo msadi002  R   21:56:30      1 d4-w4140b-01
+            210010       gpu train_mo msadi002  R 1-03:58:44      1 d3-w4140b-08
+            208483       gpu interact   ymu004  R 5-17:02:23      1 d2-w4140a-02
+            210663       gpu interact isaki001  R      25:11      1 d2-w4140a-01
+            210639       gpu interact isaki001  R    2:41:08      1 d3-w4140b-01
+            210664       gpu sys/dash wkhal001  R      21:07      1 d3-w4140b-07
+            210568       gpu sys/dash     jren  R    7:32:40      1 d3-w4140b-07
+            207464       gpu 172pcpg- adrea001  R 7-00:58:42      1 d2-w4140a-04
+            208766       gpu   pc-apc adrea001  R 4-14:12:54      1 d3-w4140b-01
+            208687       gpu   pc-apc adrea001  R 4-19:03:21      1 d3-w4140b-05
+            205758       gpu 172aldo- adrea001  R 12-19:44:11      1 d3-w4140b-08
+            205757       gpu 17aldo-n adrea001  R 12-19:44:24      1 d3-w4140b-07
+            209415       gpu pc-apc-n adrea001  R 2-10:53:42      1 d2-w4140a-05
+            209256       gpu pc-apc-p adrea001  R 3-11:33:44      1 d3-w4140b-04
+            207690       gpu interact yxiao002  R 6-19:17:01      1 d2-w4140a-04
+            209277       gpu      740 mshir001  R 1-22:59:17      1 d3-w4140b-06
+            209276       gpu      739 mshir001  R 2-01:20:13      1 d3-w4140b-06
+            209275       gpu      738 mshir001  R 2-03:15:15      1 d3-w4140b-08
+            210385       gpu interact yxiao002  R   11:25:13      1 d3-w4140b-04
+            209274       gpu      737 mshir001  R 2-07:37:18      1 d3-w4140b-02
+            209292       gpu      735 mshir001  R 1-22:42:17      1 d3-w4140b-06
+            209111       gpu      724 mshir001  R 4-01:04:13      1 d2-w4140a-06
+            209110       gpu      723 mshir001  R 4-01:04:27      1 d2-w4140a-06
+            209109       gpu      722 mshir001  R 4-01:04:37      1 d4-w4140b-02
+            209104       gpu      717 mshir001  R 4-01:05:53      1 d3-w4140b-02
+            208900       gpu      706 mshir001  R 4-09:27:34      1 d4-w4140b-02
+            210365       gpu interact pthom001  R   12:43:43      1 d3-w4140b-04
+            209112       gpu      725 mshir001  R 3-22:17:21      1 d2-w4140a-06
+            209269       gpu      732 mshir001  R 3-08:43:49      1 d3-w4140b-02
+            209251       gpu      731 mshir001  R 3-11:09:33      1 d3-w4140b-06
+            209249       gpu      729 mshir001  R 3-12:17:44      1 d2-w4140a-06
+            209248       gpu      728 mshir001  R 3-12:17:53      1 d4-w4140b-02
+            209247       gpu      727 mshir001  R 3-12:17:58      1 d4-w4140b-02
+            210229       gpu sys/dash hhuan006  R   19:50:12      1 d2-w4140a-05
+            209618       gpu interact jlats001  R 1-18:45:15      1 d4-w4140b-01
+            207783       gpu interact jlats001  R 6-13:36:50      1 d3-w4140b-05
+            207780       gpu interact jlats001  R 6-13:49:07      1 d2-w4140a-05
+            209871       gpu interact jlats001  R 1-18:34:45      1 d2-w4140a-02
+            210395       gpu dna_1.0_ sdodl001  R    4:34:39      1 d2-w4140a-01
+            210394       gpu dna_1.0_ sdodl001  R    4:46:09      1 d2-w4140a-02
+            210393       gpu dna_1.0_ sdodl001  R    5:30:09      1 d3-w4140b-05
+            210390       gpu dna_1.0_ sdodl001  R    6:16:10      1 d3-w4140b-02
+            210398       gpu dna_1.0_ sdodl001  R    4:15:08      1 d2-w4140a-01
+            210397       gpu dna_1.0_ sdodl001  R    4:26:39      1 d2-w4140a-01
+            210202       gpu dna_1.0_ sdodl001  R   20:47:12      1 d3-w4140b-01
+            210200       gpu dna_1.0_ sdodl001  R   20:55:13      1 d4-w4140b-01
+            210086       gpu fgp_data sdodl001  R   22:14:43      1 d3-w4140b-05
+            209900      main gromacs. jcoch004  R 1-15:53:04      3 e3-w6420b-[01,06,08]
+            210567      main sys/dash osahi001  R    8:29:22      1 d1-w6420a-01
+            210319      main gem_sele afarh002  R   18:05:49      1 e3-w6420b-06
+            210337      main sys/dash bbuzz001  R   14:51:13      1 e2-w6420b-01
+            210314      main sys/dash astav002  R   18:48:09      1 e3-w6420b-06
+            210638      main sys/dash slamc001  R    3:35:27      1 d5-w6420b-02
+            207773      main sys/dash hyous001  R 6-15:07:55      1 e2-w6420b-06
+            210671      main bl_NX34v    osg01  R    1:26:14      1 d4-w6420b-05
+            210331      main sys/dash bkell006  R   15:24:03      1 d4-w6420b-07
+            210333      main interact jlats001  R   15:08:41      1 d6-w6420b-04
+            204524      main interact hhuan006  R 14-00:13:16      1 d4-w6420b-03
+            206649      main Al_M_1mc ngund001  R 10-02:54:33      1 e3-w6420b-05
+            206647      main Al_M_1mc ngund001  R 10-03:10:20      1 e3-w6420b-01
+            195512      main   25-500 stora002  R 30-22:53:10      2 e2-w6420b-[01-02]
+            195511      main   25-500 stora002  R 30-22:55:00      4 e3-w6420b-[01,03-05]
+            195507      main   25-500 stora002  R 30-23:03:03      4 d5-w6420b-[01-04]
+            210366      main interact aowus003  R   12:33:23      1 d5-w6420b-02
+            206498      main TBC_herg aowus003  R 11-19:29:27      2 e3-w6420b-[08,10]
+            210662      main    ba_5p ngund001  R    2:05:03      1 d4-w6420b-08
+            210652      main  alum_hh ngund001  R    2:13:06      1 d4-w6420b-08
+            210645      main  alum_ff ngund001  R    2:23:27      1 d5-w6420b-20
+            210643      main  alum_ee ngund001  R    2:34:19      1 d6-w6420b-06
+            210642      main  alum_gg ngund001  R    2:42:12      1 d4-w6420b-06
+            210641      main  alum_ff ngund001  R    2:52:43      1 d4-w6420b-06
+            210576      main    bb_5p ngund001  R    4:11:53      1 d4-w6420b-05
+            210575      main    aa_5p ngund001  R    4:14:25      1 d4-w6420b-05
+            209887      main Ba_M_1mc ngund001  R 1-17:00:06      1 e2-w6420b-03
+            209883      main  BaM_1mc ngund001  R 1-17:09:20      1 e2-w6420b-03
+            209880      main BaAl_M_1 ngund001  R 1-17:18:31      1 e2-w6420b-03
+            209878      main AlBa_M_1 ngund001  R 1-17:25:27      1 e2-w6420b-04
+            210703      main    ab_5p ngund001  R      11:31      1 d4-w6420b-02
+            206888      main WAP_1k_t mpino002  R 8-12:22:39     25 d5-w6420b-[02-05,09-10,13,15-24],e1-w6420b-[01,03,07-08,10,15-17]
+            210323      main   ACCIMA mdinnima  R   17:25:49     15 d6-w6420b-[17-19],e1-w6420b-[18-20,22-24],e3-w6420b-[19-24]
+            203259      main clmp_orp    cbird  R 18-00:18:48      1 e3-w6420b-03
+            200693      main    100_2 stora002  R 21-20:10:34      2 e1-w6420b-[01-02]
+            210338      main 3ITopt85 ricke001  R   14:47:37     19 d6-w6420b-[04-05],e2-w6420b-[01,03-04,06,08-13,16-21,24]
+            210698      main 3ITopt86 ricke001  R      22:01     16 d1-w6420a-[01,05-08,13-22],d4-w6420b-01
+            203544      main SSDCstar juppe001  R 15-22:53:14     12 e1-w6420b-[01-02,04-05,07-14]
+            204927      main SSDCstar juppe001  R 13-00:36:00     13 d6-w6420b-[01,03,05-09,11-16]
+            209982      main SSDCstar juppe001  R 1-10:24:24     10 d5-w6420b-[02,05-06,08-13,15]
+            209981      main SSDCstar juppe001  R 1-10:24:39     13 e3-w6420b-[01,04,06,08,10-18]
+            207036      main     3r4w   jji016  R 7-22:30:26      3 d1-w6420a-[01-03]
+            206846      main 2r2wsolv   jji016  R 8-18:31:38      3 d6-w6420b-[01,03-04]
+            207566      main     4r4w   jji016  R 6-20:35:35      8 d5-w6420b-[02,05,16-21]
+            207173      main     3r3w   jji016  R 7-13:24:11      8 d6-w6420b-[07-09,11-15]
+            207338      main jmq.slur   jji016  R 7-07:01:29      4 e3-w6420b-[01,04-06]
+            210695     masha sys/dash rfang002  R      30:07      1 d5-wdgx1-01
+            210699 timed-gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~> sinfo
+PARTITION  AVAIL  TIMELIMIT  NODES  STATE NODELIST
+main*         up   infinite      5  fail* d5-w6420b-14,d6-w6420b-24,e2-w6420b-22,e3-w6420b-[02,09]
+main*         up   infinite      6   fail d6-w6420b-[02,10,21],e1-w6420b-[06,21],e2-w6420b-05
+main*         up   infinite      1  down* e2-w6420b-15
+main*         up   infinite      2   drng d5-w6420b-01,e3-w6420b-03
+main*         up   infinite      5  drain d1-w6420a-[04,09-10],e2-w6420b-[07,14]
+main*         up   infinite     64    mix d1-w6420a-[05-08,13-22],d4-w6420b-[01-03,05-06,08],d5-w6420b-[05-06,08,11-13,15-17,20-24],d6-w6420b-[07,14-16],e1-w6420b-[01,03-05,09,11-16],e2-w6420b-[01-02,19-21,24],e3-w6420b-[06,11-18]
+main*         up   infinite     58  alloc d1-w6420a-[01-03],d4-w6420b-07,d5-w6420b-[02-04,09-10,18-19],d6-w6420b-[01,03-06,08-09,11-13,17-19],e1-w6420b-[02,07-08,10,17-20,22-24],e2-w6420b-[03-04,06,08-13,16-18],e3-w6420b-[01,04-05,08,10,19-24]
+main*         up   infinite     12   idle d1-w6420a-[11-12,23-24],d4-w6420b-[04,09,11-12],d6-w6420b-[20,22-23],e3-w6420b-07
+main*         up   infinite      2   down d5-w6420b-07,e2-w6420b-23
+timed-main    up    2:00:00      5  fail* d5-w6420b-14,d6-w6420b-24,e2-w6420b-22,e3-w6420b-[02,09]
+timed-main    up    2:00:00      6   fail d6-w6420b-[02,10,21],e1-w6420b-[06,21],e2-w6420b-05
+timed-main    up    2:00:00      1  down* e2-w6420b-15
+timed-main    up    2:00:00      2   drng d5-w6420b-01,e3-w6420b-03
+timed-main    up    2:00:00      5  drain d1-w6420a-[04,09-10],e2-w6420b-[07,14]
+timed-main    up    2:00:00     64    mix d1-w6420a-[05-08,13-22],d4-w6420b-[01-03,05-06,08],d5-w6420b-[05-06,08,11-13,15-17,20-24],d6-w6420b-[07,14-16],e1-w6420b-[01,03-05,09,11-16],e2-w6420b-[01-02,19-21,24],e3-w6420b-[06,11-18]
+timed-main    up    2:00:00     58  alloc d1-w6420a-[01-03],d4-w6420b-07,d5-w6420b-[02-04,09-10,18-19],d6-w6420b-[01,03-06,08-09,11-13,17-19],e1-w6420b-[02,07-08,10,17-20,22-24],e2-w6420b-[03-04,06,08-13,16-18],e3-w6420b-[01,04-05,08,10,19-24]
+timed-main    up    2:00:00     11   idle d1-w6420a-[11-12,23],d4-w6420b-[04,09,11-12],d6-w6420b-[20,22-23],e3-w6420b-07
+timed-main    up    2:00:00      2   down d5-w6420b-07,e2-w6420b-23
+gpu           up   infinite      1  fail* d3-w4140b-03
+gpu           up   infinite      1  down* d2-w4140a-03
+gpu           up   infinite     10    mix d2-w4140a-[01-02,04-05],d3-w4140b-[01,04-05,07-08],d4-w4140b-01
+gpu           up   infinite      4  alloc d2-w4140a-06,d3-w4140b-[02,06],d4-w4140b-02
+timed-gpu     up    2:00:00      1  fail* d3-w4140b-03
+timed-gpu     up    2:00:00      1  down* d2-w4140a-03
+timed-gpu     up    2:00:00     10    mix d2-w4140a-[01-02,04-05],d3-w4140b-[01,04-05,07-08],d4-w4140b-01
+timed-gpu     up    2:00:00      4  alloc d2-w4140a-06,d3-w4140b-[02,06],d4-w4140b-02
+masha         up   infinite      1    mix d5-wdgx1-01
+osg           up   infinite      1   idle d4-w6420b-10
+wahab-01:~> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210699 timed-gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~> scancel 210699
+wahab-01:~> ls
+CItraining  HCN-pytorch
+wahab-01:~> cd HCN-pytorch/
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  test_script.sh
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_HCN.log
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     skeletons.zip     train_script.sh
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_HCN.log      utils
+wahab-01:~/HCN-pytorch> emacs train
+train_HCN.log*   train_script.sh* 
+wahab-01:~/HCN-pytorch> emacs train_script.sh
+wahab-01:~/HCN-pytorch> sbatch train
+train_HCN.log*   train_script.sh* 
+wahab-01:~/HCN-pytorch> sbatch train_script.sh
+Submitted batch job 210704
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  test_script.sh
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_HCN.log
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     skeletons.zip     train_script.sh
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_HCN.log      utils
+wahab-01:~/HCN-pytorch> ls -l skeletons.zip
+-rwx------ 1 hpc-0235 users 3117 Jun 23 11:04 skeletons.zip
+wahab-01:~/HCN-pytorch> emacs skeletons.zip
+wahab-01:~/HCN-pytorch> rm skeletons.zip
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  train_HCN.log
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_script.sh
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     test_HCN.log      utils
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_script.sh
+wahab-01:~/HCN-pytorch> python google_drive.py 1CUZnBtYwifVXS21yVg62T-vrPVayso5H skeletons.zip
+Traceback (most recent call last):
+  File "google_drive.py", line 1, in <module>
+    import requests
+ImportError: No module named requests
+wahab-01:~/HCN-pytorch> emacs how_to.txt 
+wahab-01:~/HCN-pytorch> module load container_env tensorflow-gpu/2.2.0
+wahab-01:~/HCN-pytorch> crun.tensorflow-gpu python google_drive.py 1CUZnBtYwifVXS21yVg62T-vrPVayso5H skeletons.zip
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  test_script.sh
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_HCN.log
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     skeletons.zip     train_script.sh
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_HCN.log      utils
+wahab-01:~/HCN-pytorch> ls -l
+total 41656
+-rw-r--r-- 1 hpc-0235 users       43 Jun 22 17:40 HCN-pytorch.code-workspace
+-rw-r--r-- 1 hpc-0235 users  3587844 Jun 21 14:47 HCN_Training.PNG
+-rw-r--r-- 1 hpc-0235 users     4064 Jun 21 14:47 README.md
+-rw-r--r-- 1 hpc-0235 users   267189 Jun 21 14:47 README.pdf
+-rw-r--r-- 1 hpc-0235 users    16553 Jun 21 14:47 Week0_update.pdf
+-rw-r--r-- 1 hpc-0235 users      836 Jun 21 14:47 Week1_update.md
+-rw-r--r-- 1 hpc-0235 users    14338 Jun 21 14:47 Week1_update.pdf
+-rw-r--r-- 1 hpc-0235 users     1103 Jun 22 17:40 Week2_update.md
+-rw-r--r-- 1 hpc-0235 users    17740 Jun 22 17:40 Week2_update.pdf
+drwx------ 2 hpc-0235 users       88 Jun 16 16:04 __pycache__
+-rw-r--r-- 1 hpc-0235 users    22987 Jun 21 16:04 bk_main.py
+drwx------ 4 hpc-0235 users      304 Jun 22 17:40 data_and_visualization
+-rw-r--r-- 1 hpc-0235 users     1855 Jun 21 16:14 data_loader.py
+drwx------ 4 hpc-0235 users       87 Jun 16 12:29 experiments
+drwx------ 3 hpc-0235 users      240 Jun 23 10:36 feeder
+-rwxr-xr-x 1 hpc-0235 users     1304 Jun 21 14:47 google_drive.py
+-rwxr-xr-x 1 hpc-0235 users      748 Jun 21 14:47 how_to.txt
+drwx------ 2 hpc-0235 users      860 Jun 23 10:44 lidar_mocap
+-rwx------ 1 hpc-0235 users     5789 Jun 21 14:48 lidar_mocap.zip
+drwx------ 2 hpc-0235 users      780 Jun 22 17:40 lidar_mocap_25
+drwx------ 3 hpc-0235 users       22 Jun 23 09:58 lidar_mocap_convert
+-rw-r--r-- 1 hpc-0235 users    22965 Jun 21 14:47 main.py
+drwx------ 3 hpc-0235 users      109 Jun 16 18:01 model
+-rwxr-xr-x 1 hpc-0235 users        0 Jun 21 14:47 module
+-rw-r--r-- 1 hpc-0235 users     1159 Jun 21 14:47 requirements.txt
+drwx------ 5 hpc-0235 users      107 Jun 16 12:29 resource
+-rwx------ 1 hpc-0235 users     3117 Jun 23 11:12 skeletons.zip
+-rwxr-xr-x 1 hpc-0235 users     9097 Jun 21 14:47 test_HCN.log
+-rwxr-xr-x 1 hpc-0235 users      850 Jun 21 14:47 test_script.sh
+-rwxr-xr-x 1 hpc-0235 users 24099980 Jun 21 14:47 train_HCN.log
+-rwxr-xr-x 1 hpc-0235 users      843 Jun 23 11:07 train_script.sh
+drwx------ 3 hpc-0235 users       84 Jun 16 12:29 utils
+wahab-01:~/HCN-pytorch> rm skeletons.zip
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  train_HCN.log
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_script.sh
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     test_HCN.log      utils
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_script.sh
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210704       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+wahab-01:~/HCN-pytorch> ls
+HCN-pytorch.code-workspace  Week0_update.pdf  Week2_update.pdf	      data_loader.py   how_to.txt	lidar_mocap_convert  requirements.txt  train_HCN.log
+HCN_Training.PNG	    Week1_update.md   __pycache__	      experiments      lidar_mocap	main.py		     resource	       train_script.sh
+README.md		    Week1_update.pdf  bk_main.py	      feeder	       lidar_mocap.zip	model		     test_HCN.log      utils
+README.pdf		    Week2_update.md   data_and_visualization  google_drive.py  lidar_mocap_25	module		     test_script.sh
+wahab-01:~/HCN-pytorch> emacs train
+train_HCN.log*   train_script.sh* 
+wahab-01:~/HCN-pytorch> emacs train_HCN.log 
+wahab-01:~/HCN-pytorch> rm train
+train_HCN.log*   train_script.sh* 
+wahab-01:~/HCN-pytorch> rm train_HCN.log
+wahab-01:~/HCN-pytorch> ls
+'#train_HCN.log#'	      README.pdf	 Week2_update.md    data_and_visualization   google_drive.py   lidar_mocap_25	     module	        test_script.sh
+ HCN-pytorch.code-workspace   Week0_update.pdf	 Week2_update.pdf   data_loader.py	     how_to.txt        lidar_mocap_convert   requirements.txt   train_script.sh
+ HCN_Training.PNG	      Week1_update.md	 __pycache__	    experiments		     lidar_mocap       main.py		     resource	        utils
+ README.md		      Week1_update.pdf	 bk_main.py	    feeder		     lidar_mocap.zip   model		     test_HCN.log
+wahab-01:~/HCN-pytorch> sbatch train_script.sh 
+Submitted batch job 210708
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235 PD       0:00      1 (Resources)
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235  R       0:11      1 d3-w4140b-05
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            210708       gpu train_HC hpc-0235  R       0:15      1 d3-w4140b-05
+wahab-01:~/HCN-pytorch> squeue -u hpc-0235
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+wahab-01:~/HCN-pytorch> ls
+'#train_HCN.log#'	      README.pdf	 Week2_update.md    data_and_visualization   google_drive.py   lidar_mocap_25	     module	        test_script.sh
+ HCN-pytorch.code-workspace   Week0_update.pdf	 Week2_update.pdf   data_loader.py	     how_to.txt        lidar_mocap_convert   requirements.txt   train_HCN.log
+ HCN_Training.PNG	      Week1_update.md	 __pycache__	    experiments		     lidar_mocap       main.py		     resource	        train_script.sh
+ README.md		      Week1_update.pdf	 bk_main.py	    feeder		     lidar_mocap.zip   model		     test_HCN.log       utils
+wahab-01:~/HCN-pytorch> emacs train
+train_HCN.log*   train_script.sh* 
+wahab-01:~/HCN-pytorch> emacs train_HCN.log 
+wahab-01:~/HCN-pytorch> emacs train_HCN.log
+wahab-01:~/HCN-pytorch> ls
+'#train_HCN.log#'	      README.pdf	 Week2_update.md    data_and_visualization   google_drive.py   lidar_mocap_25	     module	        test_script.sh
+ HCN-pytorch.code-workspace   Week0_update.pdf	 Week2_update.pdf   data_loader.py	     how_to.txt        lidar_mocap_convert   requirements.txt   train_HCN.log
+ HCN_Training.PNG	      Week1_update.md	 __pycache__	    experiments		     lidar_mocap       main.py		     resource	        train_script.sh
+ README.md		      Week1_update.pdf	 bk_main.py	    feeder		     lidar_mocap.zip   model		     test_HCN.log       utils
+wahab-01:~/HCN-pytorch> cd experiments/
+wahab-01:~/HCN-pytorch/experiments> ls
+NTU-RGB-D-CS  NTU-RGB-D-CV  lidar_mocap
+wahab-01:~/HCN-pytorch/experiments> cd lidar_mocap/
+wahab-01:~/HCN-pytorch/experiments/lidar_mocap> ls
+HCN01
+wahab-01:~/HCN-pytorch/experiments/lidar_mocap> cd HCN01
+wahab-01:~/HCN-pytorch/experiments/lidar_mocap/HCN01> ls
+params.json
+wahab-01:~/HCN-pytorch/experiments/lidar_mocap/HCN01> emacs params.json
+
+File Edit Options Buffers Tools Javascript Help                                                                                                                                      
+      "random_shift":false,
+      "random_move":false,
+      "window_size":32,
+      "normalization": false,
+      "debug":false,
+      "origin_transfer":0,
+      "crop_resize":true,
+      "p_interval":[0.5,1]
+    },
+    "test_feeder_args":{
+      "data_path":null,
+      "label_path":null,
+      "random_valid_choose":false,
+      "random_shift":false,
+      "random_move":false,
+      "window_size":32,
+      "normalization": false,
+      "debug":false,
+      "origin_transfer":0,
+      "crop_resize":true,
+      "p_interval":[0.95]},
+    "model_args":{
+      "in_channel":3,
+      "out_channel":64,
+      "window_size":32,
+      "num_joint":25,
+      "num_person":2,
+      "num_class":60
+    },
+    "loss_args":{
+      "type":"CE"
+    }
