@@ -39,10 +39,9 @@ for lab in video_labels:
                         num_joints = 13
                         
                         n.write(str(num_frames)+'\n')
-                        header = [clippedEdges, hlc, hls, hrc, hrs, isrest, lean1, lean2, ts]
+                        header = [trackingID, clippedEdges, hlc, hls, hrc, hrs, isrest, lean1, lean2, ts]
 
                         n.write(str(num_bodies)+'\n')
-                        n.write(str(trackingID)+'\n')
                         for item in header:
                             if header.index(item)==len(header)-1:
                                 n.write(str(item))
@@ -80,7 +79,7 @@ for lab in video_labels:
 
                             if i != num_frames-1:
                                 n.write(str(num_bodies)+'\n')
-                                n.write(str(trackingID)+'\n')
+                                
                                 for item in header:
                                     if header.index(item)==len(header)-1:
                                         n.write(str(item))
