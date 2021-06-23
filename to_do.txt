@@ -1,0 +1,4 @@
+1. Is the lidar mocap data creating validation data as well?
+   - Rerun skeleton training, download files when Google Drive lets me
+2. How do I fine tune the parameter files? Mainly # of channels.
+3. Change 13 joints to 25 to get more data?

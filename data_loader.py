@@ -14,12 +14,12 @@ def fetch_dataloader(types, params):
     Fetch and return train/dev
     """
     if 'lidar_mocap' in params.dataset_name :
-            params.train_feeder_args["data_path"] = params.dataset_dir+'lidar_mocap'+'/xview/train_data.npy'
-            params.train_feeder_args["num_frame_path"] = params.dataset_dir+'lidar_mocap'+'/xview/train_num_frame.npy'
-            params.train_feeder_args["label_path"] = params.dataset_dir + 'lidar_mocap' + '/xview/train_label.pkl'
-            params.test_feeder_args["data_path"] = params.dataset_dir + 'lidar_mocap' + '/xview/val_data.npy'
-            params.test_feeder_args["num_frame_path"] = params.dataset_dir + 'lidar_mocap' + '/xview/val_num_frame.npy'
-            params.test_feeder_args["label_path"] = params.dataset_dir + 'lidar_mocap' + '/xview/val_label.pkl'
+            params.train_feeder_args["data_path"] = params.dataset_dir+'lidar_mocap'+'/xvid/train_data.npy'
+            params.train_feeder_args["num_frame_path"] = params.dataset_dir+'lidar_mocap'+'/xvid/train_num_frame.npy'
+            params.train_feeder_args["label_path"] = params.dataset_dir + 'lidar_mocap' + '/xvid/train_label.pkl'
+            params.test_feeder_args["data_path"] = params.dataset_dir + 'lidar_mocap' + '/xvid/val_data.npy'
+            params.test_feeder_args["num_frame_path"] = params.dataset_dir + 'lidar_mocap' + '/xvid/val_num_frame.npy'
+            params.test_feeder_args["label_path"] = params.dataset_dir + 'lidar_mocap' + '/xvid/val_label.pkl'
 
     if types == 'train':
         if not hasattr(params,'batch_size_train'):
