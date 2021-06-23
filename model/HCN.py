@@ -125,7 +125,9 @@ class HCN(nn.Module):
             logits.append(out)
 
         # max out logits
-        out = torch.max(logits[0],logits[1])
+        logits.append(torch.empty(logits[0].size(), device = 'cuda:0')) #Creating empty 1
+        
+        out = torch.max(logits[0], logits[1]) #Could just create an empty logit of the same size?
         out = out.view(out.size(0), -1)
         out = self.fc7(out)
         out = self.fc8(out)

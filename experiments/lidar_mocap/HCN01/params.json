@@ -48,7 +48,7 @@
       "crop_resize":true,
       "p_interval":[0.95]},
     "model_args":{
-      "in_channel":3,
+	"in_channel":3,
       "out_channel":64,
       "window_size":32,
       "num_joint":13,
