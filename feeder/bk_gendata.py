@@ -10,7 +10,7 @@ import pickle
 training_subjects = [1,2,3,4,5,6,7,8,9,10]
 training_videos = [1,2]
 max_body = 1
-num_joint = 25
+num_joint = 13
 max_frame = 300
 toolbar_width = 30
 

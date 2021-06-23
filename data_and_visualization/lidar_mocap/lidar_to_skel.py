@@ -44,7 +44,10 @@ for lab in video_labels:
                         n.write(str(num_bodies)+'\n')
                         n.write(str(trackingID)+'\n')
                         for item in header:
-                            n.write(str(item)+' ')
+                            if header.index(item)==len(header)-1:
+                                n.write(str(item))
+                            else:
+                                n.write(str(item)+' ')
                         n.write('\n'+str(num_joints)+'\n')
 
 
@@ -69,13 +72,19 @@ for lab in video_labels:
                                 for item in skel_line:
                                     if item == '-0':
                                         item = '0'
-                                    n.write(str(item) + ' ')
+                                    if skel_line.index(item)==len(skel_line)-1:
+                                        n.write(str(item))
+                                    else:
+                                        n.write(str(item) + ' ')
                                 n.write('\n')
 
                             if i != num_frames-1:
                                 n.write(str(num_bodies)+'\n')
                                 n.write(str(trackingID)+'\n')
                                 for item in header:
-                                    n.write(str(item) + ' ')
+                                    if header.index(item)==len(header)-1:
+                                        n.write(str(item))
+                                    else:
+                                        n.write(str(item) + ' ')
                                 n.write('\n'+str(num_joints)+'\n')
 
