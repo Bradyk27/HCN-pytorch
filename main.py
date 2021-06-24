@@ -163,7 +163,6 @@ def evaluate(model, loss_fn, dataloader, metrics, params,logger):
 
     # compute metrics over the dataset
     for data_batch, labels_batch in dataloader:
-
         # move to GPU if available
         if params.cuda:
             if params.data_parallel:
@@ -517,7 +516,9 @@ if __name__ == '__main__':
     train_dl = data_loader.fetch_dataloader('train', params)
     test_dl = data_loader.fetch_dataloader('test', params)
     logger.info("- done.")
-
+    print("BRADY LOOK HERE!!!!!!!!!")
+    print(train_dl)
+    print(test_dl)
     if params.mode == 'train' or params.mode == 'load_train':
         # Train the model
         logger.info("Starting training for {} epoch(s)".format(params.num_epochs))
