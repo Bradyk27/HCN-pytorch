@@ -7,8 +7,8 @@ from numpy.lib.format import open_memmap
 import pickle
 
 #01, 02, 03? Do we need to specify training subjects as well?
-training_subjects = [1,2,4,6,7,8,10]
-training_videos = [1,2]
+#training_subjects = [1,2,3,4,5,6,7,8,9,10]
+training_videos = [1,2] #This determines train / val split. Label some videos as 3.
 max_body = 1
 num_joint = 13
 max_frame = 500
@@ -58,7 +58,7 @@ def gendata(data_path,
             istraining = (video_id in training_videos)
             
         #elif benchmark == 'xsub':
-        #    istraining = (subject_id in training_subjects)
+        #   istraining = (subject_id in training_subjects)
         else:
             raise ValueError()
 
