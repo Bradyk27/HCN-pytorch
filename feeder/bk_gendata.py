@@ -9,7 +9,7 @@ import re
 
 #01, 02, 03? Do we need to specify training subjects as well?
 #training_subjects = [1,2,3,4,5,6,7,8,9,10]
-training_videos = list(range(999,1220) #This determines train / val split. Hardcoded currently
+training_videos = list(range(1,999)) #This determines train / val split. Hardcoded currently
 max_body = 1
 num_joint = 13
 max_frame = 20
@@ -53,7 +53,7 @@ def gendata(data_path,
         subject_id = int(
             filename[filename.find('subject') + 7:filename.find('subject') + 9])
         video_id = int(
-            re.findall(r'\d+', filename[filename.find('video') + 5:filename.find('video') + 9])) #Not scalable...but should work.
+            re.findall(r'\d+', filename[filename.find('video') + 5:filename.find('video') + 9])[0]) #Not scalable...but should work.
 
         if benchmark == 'xvid':
             istraining = (video_id in training_videos)
