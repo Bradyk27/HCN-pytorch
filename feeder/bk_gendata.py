@@ -5,13 +5,14 @@ import sys
 from ntu_read_skeleton import read_xyz
 from numpy.lib.format import open_memmap
 import pickle
+import re
 
 #01, 02, 03? Do we need to specify training subjects as well?
 #training_subjects = [1,2,3,4,5,6,7,8,9,10]
-training_videos = [1,2] #This determines train / val split. Label some videos as 3.
+training_videos = list(range(999,1220) #This determines train / val split. Hardcoded currently
 max_body = 1
 num_joint = 13
-max_frame = 500
+max_frame = 20
 toolbar_width = 30
 
 
@@ -52,7 +53,7 @@ def gendata(data_path,
         subject_id = int(
             filename[filename.find('subject') + 7:filename.find('subject') + 9])
         video_id = int(
-            filename[filename.find('video') + 5:filename.find('video') + 7])
+            re.findall(r'\d+', filename[filename.find('video') + 5:filename.find('video') + 9])) #Not scalable...but should work.
 
         if benchmark == 'xvid':
             istraining = (video_id in training_videos)
