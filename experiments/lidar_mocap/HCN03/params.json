@@ -53,7 +53,7 @@
       "window_size":32,
       "num_joint":13,
       "num_person":1,
-      "num_class":10
+      "num_class":9
     },
     "loss_args":{
       "type":"CE"
