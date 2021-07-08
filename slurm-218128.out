@@ -1,0 +1,394 @@
+/home/hpc-0235/.local/lib/python3.7/site-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+INFO:root:Application Started
+2021-07-08 04:15:08,350:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.23ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.92ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:08,378:INFO: Visdom successfully connected to server
+2021-07-08 04:15:08,474:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.03ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.83ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:08,489:INFO: Visdom successfully connected to server
+2021-07-08 04:15:08,585:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.03ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.82ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:08,601:INFO: Visdom successfully connected to server
+2021-07-08 04:15:08,697:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.25ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.80ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:08,712:INFO: Visdom successfully connected to server
+2021-07-08 04:15:08,809:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 2.41ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.80ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:08,823:INFO: Visdom successfully connected to server
+2021-07-08 04:15:08,920:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:08,920:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:08,920:INFO: model_dir: ./
+2021-07-08 04:15:08,920:INFO: model_name: HCN
+2021-07-08 04:15:08,920:INFO: load_model: None
+2021-07-08 04:15:08,920:INFO: load: False
+2021-07-08 04:15:08,920:INFO: mode: train
+2021-07-08 04:15:08,921:INFO: num: 01
+2021-07-08 04:15:08,921:INFO: model_version: HCN
+2021-07-08 04:15:08,921:INFO: experiment_path: ./experiments/lidar_mocap/HCN01
+2021-07-08 04:15:08,921:INFO: restore_file: None
+2021-07-08 04:15:08,921:INFO: gpu_id: 0
+2021-07-08 04:15:08,921:INFO: cuda: True
+2021-07-08 04:15:08,921:INFO: data_parallel: False
+2021-07-08 04:15:08,921:INFO: seed: 0
+2021-07-08 04:15:08,921:INFO: lr: 0.001
+2021-07-08 04:15:08,921:INFO: lr_decay_type: exp
+2021-07-08 04:15:08,922:INFO: lr_step: [100, 160, 200]
+2021-07-08 04:15:08,922:INFO: scheduler_gamma: 0.1
+2021-07-08 04:15:08,922:INFO: scheduler_gamma2: 0.99
+2021-07-08 04:15:08,922:INFO: scheduler_gamma3: 0.5
+2021-07-08 04:15:08,922:INFO: patience: 20
+2021-07-08 04:15:08,922:INFO: batch_size: 64
+2021-07-08 04:15:08,922:INFO: num_epochs: 400
+2021-07-08 04:15:08,922:INFO: start_epoch: 0
+2021-07-08 04:15:08,922:INFO: save_best_ever_n_epoch: 50
+2021-07-08 04:15:08,922:INFO: save_summary_steps: 1
+2021-07-08 04:15:08,923:INFO: num_workers: 4
+2021-07-08 04:15:08,923:INFO: optimizer: Adam
+2021-07-08 04:15:08,923:INFO: weight_decay: 0.0001
+2021-07-08 04:15:08,923:INFO: clip: 0.5
+2021-07-08 04:15:08,923:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-07-08 04:15:08,923:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-07-08 04:15:08,923:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 9}
+2021-07-08 04:15:08,923:INFO: loss_args: {'type': 'CE'}
+2021-07-08 04:15:08,923:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:08,924:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:08,924:INFO: mode: train
+2021-07-08 04:15:28,767:INFO: HCN(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv1m): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2m): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3m): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4m): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv5): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv6): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc7): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+  )
+  (fc8): Linear(in_features=512, out_features=9, bias=True)
+)
+2021-07-08 04:15:28,769:INFO: Loading the datasets...
+weight initial finished!
+Traceback (most recent call last):
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 72, in load_data
+    with open(self.label_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 516, in <module>
+    train_dl = data_loader.fetch_dataloader('train', params)
+  File "/home/hpc-0235/HCN-pytorch/data_loader.py", line 29, in fetch_dataloader
+    dataset=Feeder(**params.train_feeder_args),
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 61, in __init__
+    self.load_data()
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 76, in load_data
+    with open(self.label_path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+2021-07-08 04:15:33,351:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.12ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.85ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:33,370:INFO: Visdom successfully connected to server
+2021-07-08 04:15:33,466:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.02ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.81ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:33,481:INFO: Visdom successfully connected to server
+2021-07-08 04:15:33,578:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.98ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.80ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:33,595:INFO: Visdom successfully connected to server
+2021-07-08 04:15:33,691:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.97ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.81ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:33,707:INFO: Visdom successfully connected to server
+2021-07-08 04:15:33,803:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 2.14ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.82ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:33,818:INFO: Visdom successfully connected to server
+2021-07-08 04:15:33,914:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:33,914:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:33,915:INFO: model_dir: ./
+2021-07-08 04:15:33,915:INFO: model_name: HCN
+2021-07-08 04:15:33,915:INFO: load_model: None
+2021-07-08 04:15:33,915:INFO: load: False
+2021-07-08 04:15:33,915:INFO: mode: train
+2021-07-08 04:15:33,915:INFO: num: 02
+2021-07-08 04:15:33,915:INFO: model_version: HCN
+2021-07-08 04:15:33,915:INFO: experiment_path: ./experiments/lidar_mocap/HCN02
+2021-07-08 04:15:33,915:INFO: restore_file: None
+2021-07-08 04:15:33,916:INFO: gpu_id: 0
+2021-07-08 04:15:33,916:INFO: cuda: True
+2021-07-08 04:15:33,916:INFO: data_parallel: False
+2021-07-08 04:15:33,916:INFO: seed: 0
+2021-07-08 04:15:33,916:INFO: lr: 0.001
+2021-07-08 04:15:33,916:INFO: lr_decay_type: exp
+2021-07-08 04:15:33,916:INFO: lr_step: [100, 160, 200]
+2021-07-08 04:15:33,916:INFO: scheduler_gamma: 0.1
+2021-07-08 04:15:33,916:INFO: scheduler_gamma2: 0.99
+2021-07-08 04:15:33,916:INFO: scheduler_gamma3: 0.5
+2021-07-08 04:15:33,917:INFO: patience: 100
+2021-07-08 04:15:33,917:INFO: batch_size: 64
+2021-07-08 04:15:33,917:INFO: num_epochs: 1000
+2021-07-08 04:15:33,917:INFO: start_epoch: 0
+2021-07-08 04:15:33,917:INFO: save_best_ever_n_epoch: 50
+2021-07-08 04:15:33,917:INFO: save_summary_steps: 1
+2021-07-08 04:15:33,917:INFO: num_workers: 4
+2021-07-08 04:15:33,917:INFO: optimizer: Adam
+2021-07-08 04:15:33,917:INFO: weight_decay: 0.0001
+2021-07-08 04:15:33,917:INFO: clip: 0.5
+2021-07-08 04:15:33,918:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-07-08 04:15:33,918:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-07-08 04:15:33,918:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 9}
+2021-07-08 04:15:33,918:INFO: loss_args: {'type': 'CE'}
+2021-07-08 04:15:33,918:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:33,918:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:33,918:INFO: mode: train
+2021-07-08 04:15:42,616:INFO: HCN(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv1m): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2m): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3m): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4m): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv5): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv6): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc7): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+  )
+  (fc8): Linear(in_features=512, out_features=9, bias=True)
+)
+2021-07-08 04:15:42,618:INFO: Loading the datasets...
+weight initial finished!
+Traceback (most recent call last):
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 72, in load_data
+    with open(self.label_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 516, in <module>
+    train_dl = data_loader.fetch_dataloader('train', params)
+  File "/home/hpc-0235/HCN-pytorch/data_loader.py", line 29, in fetch_dataloader
+    dataset=Feeder(**params.train_feeder_args),
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 61, in __init__
+    self.load_data()
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 76, in load_data
+    with open(self.label_path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+2021-07-08 04:15:47,073:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.15ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.81ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:47,091:INFO: Visdom successfully connected to server
+2021-07-08 04:15:47,188:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.02ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.83ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:47,203:INFO: Visdom successfully connected to server
+2021-07-08 04:15:47,299:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 2.65ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.79ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:47,316:INFO: Visdom successfully connected to server
+2021-07-08 04:15:47,413:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.86ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.80ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:47,427:INFO: Visdom successfully connected to server
+2021-07-08 04:15:47,523:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.97ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.82ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-08 04:15:47,538:INFO: Visdom successfully connected to server
+2021-07-08 04:15:47,634:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:47,635:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:47,635:INFO: model_dir: ./
+2021-07-08 04:15:47,635:INFO: model_name: HCN
+2021-07-08 04:15:47,635:INFO: load_model: None
+2021-07-08 04:15:47,635:INFO: load: False
+2021-07-08 04:15:47,635:INFO: mode: train
+2021-07-08 04:15:47,635:INFO: num: 03
+2021-07-08 04:15:47,635:INFO: model_version: HCN
+2021-07-08 04:15:47,636:INFO: experiment_path: ./experiments/lidar_mocap/HCN03
+2021-07-08 04:15:47,636:INFO: restore_file: None
+2021-07-08 04:15:47,636:INFO: gpu_id: 0
+2021-07-08 04:15:47,636:INFO: cuda: True
+2021-07-08 04:15:47,636:INFO: data_parallel: False
+2021-07-08 04:15:47,636:INFO: seed: 0
+2021-07-08 04:15:47,636:INFO: lr: 0.001
+2021-07-08 04:15:47,636:INFO: lr_decay_type: exp
+2021-07-08 04:15:47,636:INFO: lr_step: [100, 160, 200]
+2021-07-08 04:15:47,636:INFO: scheduler_gamma: 0.1
+2021-07-08 04:15:47,637:INFO: scheduler_gamma2: 0.99
+2021-07-08 04:15:47,637:INFO: scheduler_gamma3: 0.5
+2021-07-08 04:15:47,637:INFO: patience: 50
+2021-07-08 04:15:47,637:INFO: batch_size: 64
+2021-07-08 04:15:47,637:INFO: num_epochs: 150
+2021-07-08 04:15:47,637:INFO: start_epoch: 0
+2021-07-08 04:15:47,637:INFO: save_best_ever_n_epoch: 50
+2021-07-08 04:15:47,637:INFO: save_summary_steps: 1
+2021-07-08 04:15:47,637:INFO: num_workers: 4
+2021-07-08 04:15:47,637:INFO: optimizer: Adam
+2021-07-08 04:15:47,638:INFO: weight_decay: 0.0001
+2021-07-08 04:15:47,638:INFO: clip: 0.5
+2021-07-08 04:15:47,638:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-07-08 04:15:47,638:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-07-08 04:15:47,638:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 9}
+2021-07-08 04:15:47,638:INFO: loss_args: {'type': 'CE'}
+2021-07-08 04:15:47,638:INFO: dataset_dir: lidar_mocap_split_convert/
+2021-07-08 04:15:47,638:INFO: dataset_name: lidar_mocap
+2021-07-08 04:15:47,638:INFO: mode: train
+2021-07-08 04:15:57,007:INFO: HCN(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv1m): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2m): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3m): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4m): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv5): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv6): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc7): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+  )
+  (fc8): Linear(in_features=512, out_features=9, bias=True)
+)
+2021-07-08 04:15:57,009:INFO: Loading the datasets...
+weight initial finished!
+Traceback (most recent call last):
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 72, in load_data
+    with open(self.label_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 516, in <module>
+    train_dl = data_loader.fetch_dataloader('train', params)
+  File "/home/hpc-0235/HCN-pytorch/data_loader.py", line 29, in fetch_dataloader
+    dataset=Feeder(**params.train_feeder_args),
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 61, in __init__
+    self.load_data()
+  File "/home/hpc-0235/HCN-pytorch/feeder/feeder.py", line 76, in load_data
+    with open(self.label_path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'lidar_mocap_split_convert/lidar_mocap/xvid/train_label.pkl'
+slurmstepd: error: *** JOB 218128 ON d3-w4140b-04 CANCELLED AT 2021-07-08T04:16:00 ***
