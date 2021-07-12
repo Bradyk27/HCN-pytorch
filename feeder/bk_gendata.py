@@ -48,6 +48,8 @@ def gendata(data_path,
     sample_name = []
     sample_label = []
     for filename in os.listdir(data_path):
+        if filename[len(filename)-8:] != "skeleton":
+            continue
         if filename in ignored_samples:
             continue
         subject_id = int(
