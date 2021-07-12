@@ -1,3 +1,4 @@
+0. Just train & test the HCN01 & HCN02 model again...I refuse to believe it.
 1. Set train_eval to 10
 2. Try frames of 5
 3. Try leave one out cross validation. Would most certainly need to shell script this which would be a huge bitch.
