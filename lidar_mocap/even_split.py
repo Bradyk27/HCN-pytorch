@@ -22,5 +22,7 @@ for lab in subject_labels:
         selected_files.append(f)
 
 for f in os.listdir('./'):
+    if f[len(f)-8:] != "skeleton":
+        continue
     if f not in selected_files:
         os.remove(f)
