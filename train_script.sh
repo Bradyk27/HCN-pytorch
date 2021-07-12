@@ -5,8 +5,8 @@
 #SBATCH --gres gpu:1
 #SBATCH --job-name=train_HCN
 ## SBATCH --output=train_HCN.log
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=bradyakruse@gmail.com
+## SBATCH --mail-type=ALL
+## SBATCH --mail-user=bradyakruse@gmail.com
 
 enable_lmod
 module load container_env tensorflow-gpu/2.2.0

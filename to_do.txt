@@ -1,11 +1,4 @@
-1. Is the lidar mocap data creating validation data as well?
-   - Rerun skeleton training, download files when Google Drive lets me
-   - Manually set in code? 7 train & 3 test?
-2. How do I fine tune the parameter files? Mainly # of channels.
-3. Change 13 joints to 25 to get more data?
-4. Only xvid vs. xview & xsub
-
-
-
-CHANGE LOG
-1. HCN.py
+1. Set train_eval to 10
+2. Try frames of 5
+3. Try leave one out cross validation. Would most certainly need to shell script this which would be a huge bitch.
+4. Freeze & Train with relabeled NTURGBD dataset
