@@ -21,10 +21,10 @@ for lab in subject_labels:
             total_num_frames = len(f.readlines())
 
         with open(file, 'r') as f:
-            for i in range(math.floor(total_num_frames / 5)):
+            for i in range(math.floor(total_num_frames / 3)):
                 with open('video'+str(video_lab) + 'subject' + lab + '.skeleton', 'a+') as n:
                     num_bodies = 1
-                    num_frames = 5
+                    num_frames = 3
                     trackingID = int(lab)
                     clippedEdges = 0
                     hlc = 0
@@ -49,7 +49,7 @@ for lab in subject_labels:
                     n.write('\n'+str(num_joints)+'\n')
 
 
-                    for i in range(5):
+                    for i in range(3):
                         line = f.readline().strip('\n').split(',')
                         for j in range(0, (num_joints*3),3):
                             x = line[j]

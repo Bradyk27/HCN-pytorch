@@ -13,6 +13,10 @@ module load container_env tensorflow-gpu/2.2.0
 
 crun.tensorflow-gpu python -m visdom.server &
 
+crun.tensorflow-gpu python3 main.py --dataset_dir lidar_mocap_convert/ --mode train --model_name HCN --dataset_name lidar_mocap --num 01
+
+crun.tensorflow-gpu python3 main.py --dataset_dir lidar_mocap_convert/ --mode train --model_name HCN --dataset_name lidar_mocap --num 02
+
 crun.tensorflow-gpu python3 main.py --dataset_dir lidar_mocap_convert/ --mode train --model_name HCN --dataset_name lidar_mocap --num 03
 
 crun.tensorflow-gpu python3 main.py --dataset_dir lidar_mocap_convert/ --mode train --model_name HCN --dataset_name lidar_mocap --num 04
