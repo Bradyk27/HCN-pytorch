@@ -1,0 +1,154 @@
+/home/hpc-0235/.local/lib/python3.7/site-packages/visdom/server.py:39: DeprecationWarning: zmq.eventloop.ioloop is deprecated in pyzmq 17. pyzmq now works with default tornado and asyncio eventloops.
+  ioloop.install()  # Needs to happen before any tornado imports!
+INFO:root:Application Started
+2021-07-12 21:36:26,000:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.08ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.81ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:26,046:INFO: Visdom successfully connected to server
+2021-07-12 21:36:26,142:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.38ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.37ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:26,151:INFO: Visdom successfully connected to server
+2021-07-12 21:36:26,249:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.94ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.41ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:26,263:INFO: Visdom successfully connected to server
+2021-07-12 21:36:26,361:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.33ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.41ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:26,374:INFO: Visdom successfully connected to server
+2021-07-12 21:36:26,472:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.06ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.43ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:26,485:INFO: Visdom successfully connected to server
+2021-07-12 21:36:26,583:INFO: dataset_dir: lidar_mocap_convert/
+2021-07-12 21:36:26,583:INFO: dataset_name: lidar_mocap
+2021-07-12 21:36:26,584:INFO: model_dir: ./
+2021-07-12 21:36:26,584:INFO: model_name: HCN
+2021-07-12 21:36:26,584:INFO: load_model: None
+2021-07-12 21:36:26,584:INFO: load: True
+2021-07-12 21:36:26,584:INFO: mode: test
+2021-07-12 21:36:26,584:INFO: num: 02
+2021-07-12 21:36:26,584:INFO: model_version: HCN
+2021-07-12 21:36:26,584:INFO: experiment_path: ./experiments/lidar_mocap/HCN02
+2021-07-12 21:36:26,584:INFO: restore_file: ./experiments/lidar_mocap/HCN02/checkpoint/best.pth.tar
+2021-07-12 21:36:26,585:INFO: gpu_id: 0
+2021-07-12 21:36:26,585:INFO: cuda: True
+2021-07-12 21:36:26,585:INFO: data_parallel: False
+2021-07-12 21:36:26,585:INFO: seed: 0
+2021-07-12 21:36:26,585:INFO: lr: 0.001
+2021-07-12 21:36:26,585:INFO: lr_decay_type: exp
+2021-07-12 21:36:26,585:INFO: lr_step: [100, 160, 200]
+2021-07-12 21:36:26,585:INFO: scheduler_gamma: 0.1
+2021-07-12 21:36:26,585:INFO: scheduler_gamma2: 0.99
+2021-07-12 21:36:26,585:INFO: scheduler_gamma3: 0.5
+2021-07-12 21:36:26,586:INFO: patience: 100
+2021-07-12 21:36:26,586:INFO: batch_size: 64
+2021-07-12 21:36:26,586:INFO: num_epochs: 1000
+2021-07-12 21:36:26,586:INFO: start_epoch: 0
+2021-07-12 21:36:26,586:INFO: save_best_ever_n_epoch: 50
+2021-07-12 21:36:26,586:INFO: save_summary_steps: 1
+2021-07-12 21:36:26,586:INFO: num_workers: 4
+2021-07-12 21:36:26,586:INFO: optimizer: Adam
+2021-07-12 21:36:26,586:INFO: weight_decay: 0.0001
+2021-07-12 21:36:26,586:INFO: clip: 0.5
+2021-07-12 21:36:26,587:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-07-12 21:36:26,587:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-07-12 21:36:26,587:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 10}
+2021-07-12 21:36:26,587:INFO: loss_args: {'type': 'CE'}
+2021-07-12 21:36:26,587:INFO: dataset_dir: lidar_mocap_convert/
+2021-07-12 21:36:26,587:INFO: dataset_name: lidar_mocap
+2021-07-12 21:36:26,587:INFO: mode: test
+2021-07-12 21:36:41,560:INFO: HCN(
+  (conv1): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv1m): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
+    (1): ReLU()
+  )
+  (conv2m): Conv2d(64, 32, kernel_size=(3, 1), stride=(1, 1), padding=(1, 0))
+  (conv3m): Sequential(
+    (0): Conv2d(13, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv4m): Sequential(
+    (0): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): Dropout2d(p=0.5, inplace=False)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv5): Sequential(
+    (0): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv6): Sequential(
+    (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+    (3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc7): Sequential(
+    (0): Linear(in_features=1024, out_features=512, bias=True)
+    (1): ReLU()
+    (2): Dropout2d(p=0.5, inplace=False)
+  )
+  (fc8): Linear(in_features=512, out_features=10, bias=True)
+)
+2021-07-12 21:36:41,570:INFO: Loading the datasets...
+2021-07-12 21:36:41,764:INFO: - done.
+2021-07-12 21:36:41,764:INFO: Restoring parameters from ./experiments/lidar_mocap/HCN02/checkpoint/best.pth.tar
+2021-07-12 21:36:42,119:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 0.43ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.34ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:42,125:INFO: Visdom successfully connected to server
+2021-07-12 21:36:42,224:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.08ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.40ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:42,237:INFO: Visdom successfully connected to server
+2021-07-12 21:36:42,335:WARNING: Setting up a new session...
+INFO:tornado.access:200 POST /env/main (127.0.0.1) 1.34ms
+INFO:tornado.access:101 GET /vis_socket (127.0.0.1) 0.41ms
+INFO:root:Opened visdom socket from ip: 127.0.0.1
+2021-07-12 21:36:42,348:INFO: Visdom successfully connected to server
+args.load= True
+weight initial finished!
+BRADY LOOK HERE!!!!!!!!!
+<torch.utils.data.dataloader.DataLoader object at 0x7f759d287e90>
+<torch.utils.data.dataloader.DataLoader object at 0x7f759c24a3d0>
+best_val_acc= 0.5182291666666666
+8.715080698656366e-07 701
+/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py:2952: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+2021-07-12 21:36:44,441:INFO: - Eval metrics : accuracytop1: 0.538 ; accuracytop5: 0.938 ; loss: 3.684 ; ls_all: 3.684 ; ls_CE: 3.684
+INFO:tornado.access:200 POST /events (127.0.0.1) 1.02ms
+2021-07-12 21:36:44,722:INFO: - Eval metrics : accuracytop1: 0.469 ; accuracytop5: 0.927 ; loss: 2.876 ; ls_all: 2.876 ; ls_CE: 2.876
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.99ms
+INFO:tornado.access:200 POST /events (127.0.0.1) 0.47ms

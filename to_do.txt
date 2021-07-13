@@ -1,5 +1,5 @@
-0. Just train & test the HCN01 & HCN02 model again...I refuse to believe it.
+0. Just train & test the HCN01 & HCN02 model again, with new data. (local machine)
 1. Set train_eval to 10
-2. Try frames of 5
+2. Try frames of 5 (wahab) & 3 
 3. Try leave one out cross validation. Would most certainly need to shell script this which would be a huge bitch.
 4. Freeze & Train with relabeled NTURGBD dataset

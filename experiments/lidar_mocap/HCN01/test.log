@@ -1,52 +1,52 @@
-2021-07-08 02:49:18,559:WARNING: Setting up a new session...
-2021-07-08 02:49:18,606:INFO: Visdom successfully connected to server
-2021-07-08 02:49:18,700:WARNING: Setting up a new session...
-2021-07-08 02:49:18,715:INFO: Visdom successfully connected to server
-2021-07-08 02:49:18,825:WARNING: Setting up a new session...
-2021-07-08 02:49:18,840:INFO: Visdom successfully connected to server
-2021-07-08 02:49:18,934:WARNING: Setting up a new session...
-2021-07-08 02:49:18,965:INFO: Visdom successfully connected to server
-2021-07-08 02:49:19,075:WARNING: Setting up a new session...
-2021-07-08 02:49:19,090:INFO: Visdom successfully connected to server
-2021-07-08 02:49:19,184:INFO: dataset_dir: lidar_mocap_split_convert/
-2021-07-08 02:49:19,184:INFO: dataset_name: lidar_mocap
-2021-07-08 02:49:19,184:INFO: model_dir: ./
-2021-07-08 02:49:19,184:INFO: model_name: HCN
-2021-07-08 02:49:19,184:INFO: load_model: None
-2021-07-08 02:49:19,184:INFO: load: True
-2021-07-08 02:49:19,184:INFO: mode: test
-2021-07-08 02:49:19,184:INFO: num: 01
-2021-07-08 02:49:19,184:INFO: model_version: HCN
-2021-07-08 02:49:19,184:INFO: experiment_path: ./experiments\lidar_mocap\HCN01
-2021-07-08 02:49:19,184:INFO: restore_file: ./experiments\lidar_mocap\HCN01/checkpoint/best.pth.tar
-2021-07-08 02:49:19,184:INFO: gpu_id: 0
-2021-07-08 02:49:19,184:INFO: cuda: True
-2021-07-08 02:49:19,200:INFO: data_parallel: False
-2021-07-08 02:49:19,200:INFO: seed: 0
-2021-07-08 02:49:19,200:INFO: lr: 0.001
-2021-07-08 02:49:19,200:INFO: lr_decay_type: exp
-2021-07-08 02:49:19,200:INFO: lr_step: [100, 160, 200]
-2021-07-08 02:49:19,200:INFO: scheduler_gamma: 0.1
-2021-07-08 02:49:19,200:INFO: scheduler_gamma2: 0.99
-2021-07-08 02:49:19,200:INFO: scheduler_gamma3: 0.5
-2021-07-08 02:49:19,200:INFO: patience: 20
-2021-07-08 02:49:19,200:INFO: batch_size: 64
-2021-07-08 02:49:19,200:INFO: num_epochs: 400
-2021-07-08 02:49:19,215:INFO: start_epoch: 0
-2021-07-08 02:49:19,215:INFO: save_best_ever_n_epoch: 50
-2021-07-08 02:49:19,215:INFO: save_summary_steps: 1
-2021-07-08 02:49:19,215:INFO: num_workers: 4
-2021-07-08 02:49:19,215:INFO: optimizer: Adam
-2021-07-08 02:49:19,215:INFO: weight_decay: 0.0001
-2021-07-08 02:49:19,215:INFO: clip: 0.5
-2021-07-08 02:49:19,215:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
-2021-07-08 02:49:19,215:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
-2021-07-08 02:49:19,215:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 10}
-2021-07-08 02:49:19,215:INFO: loss_args: {'type': 'CE'}
-2021-07-08 02:49:19,215:INFO: dataset_dir: lidar_mocap_split_convert/
-2021-07-08 02:49:19,215:INFO: dataset_name: lidar_mocap
-2021-07-08 02:49:19,215:INFO: mode: test
-2021-07-08 02:49:21,723:INFO: HCN(
+2021-07-12 20:46:40,287:WARNING: Setting up a new session...
+2021-07-12 20:46:40,307:INFO: Visdom successfully connected to server
+2021-07-12 20:46:40,404:WARNING: Setting up a new session...
+2021-07-12 20:46:40,419:INFO: Visdom successfully connected to server
+2021-07-12 20:46:40,515:WARNING: Setting up a new session...
+2021-07-12 20:46:40,530:INFO: Visdom successfully connected to server
+2021-07-12 20:46:40,626:WARNING: Setting up a new session...
+2021-07-12 20:46:40,641:INFO: Visdom successfully connected to server
+2021-07-12 20:46:40,737:WARNING: Setting up a new session...
+2021-07-12 20:46:40,751:INFO: Visdom successfully connected to server
+2021-07-12 20:46:40,847:INFO: dataset_dir: lidar_mocap_convert/
+2021-07-12 20:46:40,848:INFO: dataset_name: lidar_mocap
+2021-07-12 20:46:40,848:INFO: model_dir: ./
+2021-07-12 20:46:40,848:INFO: model_name: HCN
+2021-07-12 20:46:40,848:INFO: load_model: None
+2021-07-12 20:46:40,848:INFO: load: True
+2021-07-12 20:46:40,848:INFO: mode: test
+2021-07-12 20:46:40,848:INFO: num: 01
+2021-07-12 20:46:40,848:INFO: model_version: HCN
+2021-07-12 20:46:40,848:INFO: experiment_path: ./experiments/lidar_mocap/HCN01
+2021-07-12 20:46:40,849:INFO: restore_file: ./experiments/lidar_mocap/HCN01/checkpoint/best.pth.tar
+2021-07-12 20:46:40,849:INFO: gpu_id: 0
+2021-07-12 20:46:40,849:INFO: cuda: True
+2021-07-12 20:46:40,849:INFO: data_parallel: False
+2021-07-12 20:46:40,849:INFO: seed: 0
+2021-07-12 20:46:40,849:INFO: lr: 0.001
+2021-07-12 20:46:40,849:INFO: lr_decay_type: exp
+2021-07-12 20:46:40,849:INFO: lr_step: [100, 160, 200]
+2021-07-12 20:46:40,849:INFO: scheduler_gamma: 0.1
+2021-07-12 20:46:40,849:INFO: scheduler_gamma2: 0.99
+2021-07-12 20:46:40,850:INFO: scheduler_gamma3: 0.5
+2021-07-12 20:46:40,850:INFO: patience: 20
+2021-07-12 20:46:40,850:INFO: batch_size: 64
+2021-07-12 20:46:40,850:INFO: num_epochs: 400
+2021-07-12 20:46:40,850:INFO: start_epoch: 0
+2021-07-12 20:46:40,850:INFO: save_best_ever_n_epoch: 50
+2021-07-12 20:46:40,850:INFO: save_summary_steps: 1
+2021-07-12 20:46:40,850:INFO: num_workers: 4
+2021-07-12 20:46:40,850:INFO: optimizer: Adam
+2021-07-12 20:46:40,850:INFO: weight_decay: 0.0001
+2021-07-12 20:46:40,850:INFO: clip: 0.5
+2021-07-12 20:46:40,851:INFO: train_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.5, 1]}
+2021-07-12 20:46:40,851:INFO: test_feeder_args: {'data_path': None, 'label_path': None, 'random_valid_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 32, 'normalization': False, 'debug': False, 'origin_transfer': 0, 'crop_resize': True, 'p_interval': [0.95]}
+2021-07-12 20:46:40,851:INFO: model_args: {'in_channel': 3, 'out_channel': 64, 'window_size': 32, 'num_joint': 13, 'num_person': 1, 'num_class': 10}
+2021-07-12 20:46:40,851:INFO: loss_args: {'type': 'CE'}
+2021-07-12 20:46:40,851:INFO: dataset_dir: lidar_mocap_convert/
+2021-07-12 20:46:40,851:INFO: dataset_name: lidar_mocap
+2021-07-12 20:46:40,851:INFO: mode: test
+2021-07-12 20:46:49,854:INFO: HCN(
   (conv1): Sequential(
     (0): Conv2d(3, 64, kernel_size=(1, 1), stride=(1, 1))
     (1): ReLU()
@@ -94,12 +94,14 @@
   )
   (fc8): Linear(in_features=512, out_features=10, bias=True)
 )
-2021-07-08 02:49:21,723:INFO: Loading the datasets...
-2021-07-08 02:49:22,051:INFO: - done.
-2021-07-08 02:49:22,051:INFO: Restoring parameters from ./experiments\lidar_mocap\HCN01/checkpoint/best.pth.tar
-2021-07-08 02:49:22,098:WARNING: Setting up a new session...
-2021-07-08 02:49:22,113:INFO: Visdom successfully connected to server
-2021-07-08 02:49:22,223:WARNING: Setting up a new session...
-2021-07-08 02:49:22,238:INFO: Visdom successfully connected to server
-2021-07-08 02:49:22,332:WARNING: Setting up a new session...
-2021-07-08 02:49:22,348:INFO: Visdom successfully connected to server
+2021-07-12 20:46:49,855:INFO: Loading the datasets...
+2021-07-12 20:46:49,877:INFO: - done.
+2021-07-12 20:46:49,878:INFO: Restoring parameters from ./experiments/lidar_mocap/HCN01/checkpoint/best.pth.tar
+2021-07-12 20:46:49,936:WARNING: Setting up a new session...
+2021-07-12 20:46:49,949:INFO: Visdom successfully connected to server
+2021-07-12 20:46:50,047:WARNING: Setting up a new session...
+2021-07-12 20:46:50,061:INFO: Visdom successfully connected to server
+2021-07-12 20:46:50,169:WARNING: Setting up a new session...
+2021-07-12 20:46:50,185:INFO: Visdom successfully connected to server
+2021-07-12 20:46:52,438:INFO: - Eval metrics : accuracytop1: 0.449 ; accuracytop5: 0.874 ; loss: 2.198 ; ls_all: 2.198 ; ls_CE: 2.198
+2021-07-12 20:46:52,944:INFO: - Eval metrics : accuracytop1: 0.461 ; accuracytop5: 0.888 ; loss: 1.756 ; ls_all: 1.756 ; ls_CE: 1.756
