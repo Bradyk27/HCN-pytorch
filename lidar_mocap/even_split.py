@@ -3,7 +3,7 @@ import os
 import math
 import random
 
-max_num = 58
+max_num = 116
 
 skel_files = [f for f in os.listdir('./') if f[len(f)-8::] == "skeleton"]
 skel_files.sort()
