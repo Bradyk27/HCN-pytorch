@@ -14,7 +14,7 @@
     "scheduler_gamma3":0.5,
     "patience":20,
     "batch_size": 64,
-    "num_epochs": 400,
+    "num_epochs": 800,
     "start_epoch":0,
     "save_best_ever_n_epoch":50,
     "save_summary_steps": 1,
@@ -53,7 +53,7 @@
       "window_size":32,
       "num_joint":13,
       "num_person":1,
-      "num_class":10
+      "num_class":9
     },
     "loss_args":{
       "type":"CE"
