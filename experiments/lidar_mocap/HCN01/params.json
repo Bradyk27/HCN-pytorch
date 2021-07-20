@@ -6,7 +6,7 @@
     "cuda":false,
     "data_parallel": false,
     "seed": 0,
-    "lr": 0.005,
+    "lr": 0.001,
     "lr_decay_type":"exp",
     "lr_step": [100,160,200],
     "scheduler_gamma":0.1,
