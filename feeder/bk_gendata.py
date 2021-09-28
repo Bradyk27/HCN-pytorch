@@ -9,7 +9,7 @@ import re
 
 #01, 02, 03? Do we need to specify training subjects as well?
 #training_subjects = [1,2,3,4,5,6,7,8,9,10]
-training_videos = list(range(1,9999)) #This determines train / val split. Hardcoded currently
+training_videos = list(range(1,999)) #This determines train / val split. Hardcoded currently
 max_body = 1
 num_joint = 13
 max_frame = 3
