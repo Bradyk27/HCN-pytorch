@@ -9,7 +9,7 @@ while not pass_fail:
     video_id = 999
     csv_files = [f for f in os.listdir('./') if f[len(f)-8::] == "skeleton"]
     random.shuffle(csv_files)
-    eval_files = csv_files[0:len(csv_files)] #math.floor(len(csv_files)/4)] #This determines split!
+    eval_files = csv_files[0:math.floor(len(csv_files)/4)] #This determines split!
     subject_id_list = ['01','02','03','04','05','06','07','08','09'] #,'10']
     for file in eval_files:
         subject_id = file[file.find('subject')+7:file.find('subject')+9]
